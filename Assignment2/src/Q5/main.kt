@@ -6,12 +6,12 @@ fun main() {
 
     println("enter data of Readable Book")
     print("enter Book name: ")
-    book.setTitle(readln())
+    book.setTitle(readLine()!!)
 
     do {//input Book no. of pages
         try {
             print("enter Book no. of pages: ")
-            book.setNoOfPages(readln().toInt())
+            book.setNoOfPages(readLine()!!.toInt())
             if (book.getNoOfPages() > 0)
                 flag = false
             else
@@ -26,7 +26,7 @@ fun main() {
     do {//input Book price
         try {
             print("enter Book price: ")
-            book.setPrice(readln().toFloat())
+            book.setPrice(readLine()!!.toFloat())
             if (book.getPrice() > -1)
                 flag = false
             else
@@ -40,13 +40,13 @@ fun main() {
 
     println("enter data of Audio Book")
     print("enter Book name: ")
-    audioBook.setTitle(readln())
+    audioBook.setTitle(readLine()!!)
 
     flag = true
     do {//input Book Audio Duration
         try {
             print("enter Book Audio Duration: ")
-            audioBook.setAudioDuration(readln().toFloat())
+            audioBook.setAudioDuration(readLine()!!.toFloat())
             if (audioBook.getAudioDuration() > 0.0)
                 flag = false
             else
@@ -61,7 +61,7 @@ fun main() {
     do {//input Book price
         try {
             print("enter Book price: ")
-            audioBook.setPrice(readln().toFloat())
+            audioBook.setPrice(readLine()!!.toFloat())
             if (audioBook.getPrice() > -1)
                 flag = false
             else

@@ -60,7 +60,7 @@ fun main(){
     do {//input seconds
         try {
             print("enter no. of seconds: ")
-            seconds = readln().toInt()
+            seconds = readLine()!!.toInt()
             if (seconds > -1)
                 flag = false
             else
@@ -75,7 +75,7 @@ fun main(){
     do {//input minutes
         try {
             print("enter no. of minutes: ")
-            minutes = readln().toInt()
+            minutes = readLine()!!.toInt()
             if (minutes > -1)
                 flag = false
             else
@@ -90,7 +90,7 @@ fun main(){
     do {//input hours
         try {
             print("enter no. of hours: ")
-            hours= readln().toInt()
+            hours= readLine()!!.toInt()
             if (hours > -1)
                 flag = false
             else
